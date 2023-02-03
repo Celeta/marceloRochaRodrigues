@@ -129,7 +129,7 @@ const input = document.getElementById("input")
 
 input.addEventListener("input", (e) => {
     let informacao = e.target.value;
-    let filterPratos = pratos.filter(dados) => {
-        return dados.nome.toLowercase().includes(informacao);
-    }
+    let filterPratos = pratos.filter((prato) => {
+        return prato.nome.toLowercase().includes(informacao);
+    })
 });
